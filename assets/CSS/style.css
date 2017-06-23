@@ -9,61 +9,72 @@
 
  }
 
- .brick{
+ header{
+
   background-color: #fff;
-  margin left:100px;
-  height: 50px;
-  margin-top:10px;
+  width: 100%; 
+  height: 10%;
+
+
+ }
+
+ #masthead{
+ position: fixed;
+  z-index: 99;
   width: 100%;
-  padding: 0px;
-  font-family: 'Georgia', Times, Times New Roman, serif;
-
-
- }
- .brick ul{
-padding: 20px;
- }
-
- 
- #one{
-  float: left;
-  background-color: #1bb7aa;
-  height: 50px;
-  padding-right: 5px;
-  margin-left: 80px;
-  padding-top: 0px;
-  padding-left: 10px;
+  /*margin: 0 0 30px;*/
   color: #fff;
-  font-size: 25px;
+  background: #fff;
+ }
+
+ .container{
+
+  width: 100%;
+  max-width: 960px;
+  clear: both;
+  margin: 0 auto;
+
 
 
  }
 
- .brick li {
-  float: left;
-  color: #666666;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 100px;
-  letter-spacing: 2px;
-  margin: 10px;
-   
 
- }
+ nav{ 
+
+  float: right;
+  /*margin-top: 20px;*/
+  padding: 20px;
+}
+
  
- #first{
-      padding-left: 800px;
-      text-decoration: none;
+#logo {
 
- }
+    float: left;
+    width: 250px;
+    height: 56px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background: #4aaaa5;
+    position: relative;
+    left: -150px;
+    margin-left: 20px;
+    margin-top: 0px;
+}
+
+
 
  #yup{
   width: 100%;
-  margin-top: 0px;
+  margin-top: 20px;
   color: #efeeed;
-  height: 530px;
+  height: 565px;
   background-color: #efeeed;
-  margin-bottom: -10px;
+  margin-bottom: 0px;
 
 
  }
@@ -72,10 +83,10 @@ padding: 20px;
   #kilo {
     background-color: #fff;
   width: 960px;
-  margin-top: 0px;
+  margin-top: 60px;
   color: #777;
-  margin-left: 20px;
-  height: 380px;
+  margin-left: 40px;
+  height: 350px;
   margin-bottom: 0px;
 
 
@@ -86,7 +97,7 @@ padding: 20px;
     color: #777;
     background-color: #fff;
     width: 270px;
-    margin-top: -380px;
+    margin-top: -350px;
     margin-right: 10px;
    
 
@@ -143,13 +154,8 @@ padding: 20px;
     vertical-align: baseline;
   }
 
-  #look{
-    width: 100%;
-    height: 10px;
-    background-color: #1bb7aa;
-    position: relative;
-    bottom: 0px;
-  }
+  
+  
 
   .make{
     width: 50px;
@@ -163,9 +169,11 @@ padding: 20px;
     width: 100%;
     background-color: #777;
     height: 50px;
+    border-top: 5px solid #1bb7aa;
     position: absolute;
     bottom: 0;
     left: 0;
+  
   }
 
   #mic1{
@@ -177,9 +185,9 @@ padding: 20px;
   
 
   #yeah{
-    background-color: #fff;
-  width: 960px;
-  margin-top: 0px;
+  background-color: #fff;
+  width: 976px;
+  margin-top: 60px;
   color: #777;
   margin-left: 20px;
   height: 395px;
@@ -261,7 +269,7 @@ padding: 20px;
 input[type=submit] {
     background-color: #1bb7aa;
     color: white;
-    padding: 3px 12px;
+    padding: 2px 12px;
     border: none;
     border-radius: 2px;
     cursor: pointer;
@@ -321,26 +329,19 @@ input[type=submit]:hover {
 
   background-color: #fff;
   width: 50%;
-  margin-top: 0px;
+  margin-top: 60px;
   color: #777;
   margin-left: 60px;
   height: 395px;
 }
-#thin2{
-width: 660px;
-margin-right: 10px;
-margin-left: 10px;
-height: 3px;
-background-color: #777;
 
-}
 .cloth3{
     float: right;
     color: #777;
     background-color: #fff;
     width: 270px;
-    margin-top:-170px;
-    margin-right: -320px;
+    margin-top:-395px;
+    margin-right: 250px;
     margin-left: 200px;
 }
 
@@ -435,62 +436,211 @@ background-color: #777;
   transform: translateY(4px);
 }
 
+#job{
+  background-color: #fff;
+}
+
 
 @media screen and (max-width: 980px)  {
   
-  .brick{
-    width: 100%;}
+ body{
+  background-color: #efeeed;
+  width: auto;
 
-  .home { 
-   width: 50%;
-   
-  }
-  #one {
-    width: 30%;
+
+ }
+
+ #logo{
+  margin-left: 200px;
+  height:80px;
+ }
+
+  header { 
+   width: 100%;
+   margin-bottom: 0px;
+   position: fixed;
+   }
+ 
+  #masthead{
+    position: fixed;
   }
 
   #yup {
     width: 100%;
+    margin-top:0px;
+    height:100%;
+
   }
 
   #kilo {
-    width:70%;
-    background-color: #FEF9E7;}
+    width:50%;
+    background-color: #FEF9E7;
+    margin-top: 100px;
+    height: 80%;
+    margin-right: 50px;
+  }
 
-  #only { width: 20%; }
+
+  .only { 
+  width: 30%; 
+  margin-top: -465px;
+  margin-right: 50px;
+  margin-bottom: 200px;
+  }
   
-  #look {width: 100%;
-  }
-  #thin {
-    width: 95%;
-  }
-
-  footer {
+   footer {
     width: 100%;
   }
 
-#first{
-  padding-left: 500px;
+ #thin{
+  width: 95%;
+ }
+
+ #lucky{
+  width: 50%;
+  margin-left: 95px;
+  margin-bottom: 10px;
+ }
+
+ #ash{
+  margin-top: 10px;
+  font-size: 15px;
+  clear: left;
 }
 
-#lucky{
-  float: left;
-  margin-left: 10px;
+#yeah{
+  width: 50%;
+  margin-top: 100px;
+
+}
+
+
+
+#yeah3{
+background-color: #FEF9E7;
+margin-top: 100px;
+}
+
+.cloth3{
+  margin-left: 50px;
+}
+
+#job{
+  width: 95%;
+}
+
+.only3{
+  margin-right: 100px;
 }
 }
+
+
+
+
+
 
 
 
 @media screen  and (max-width: 768px) {
   
-   
+ #kilo {
+    width:95%;
+    background-color: #FEF9E7;
+    margin-top: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 50%;
+  }
+
+
+.only { 
+  width: 95%; 
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: #FEF9E7;
+  height: 50%;
+
+  }
+#okay{
+  width: 95%;
 }
 
-@media screen and (orientation:landscape) and (max-width: 640px) {
-  
-.brick {
-  width: 100%;
+#logo{
+  height: 80px;
 }
+
+#only ul{
+  text-align: center;
+}
+
+#yeah3{
+  margin-top: 90px;
+  width:95%;
+  margin-left: 18px;
+  margin-right: 0px;
+
+
+}
+
+.cloth3{
+  width: 95%;
+  margin-right: 300px;
+}
+
+#yeah{
+  width: 95%;
+  margin-top: 100px;
+}
+
+
+.only3 {
+  width: 95%;
+  margin-top: 50px;
+  margin-right: 18px;
+}
+
+#job{
+  height: 198px;
+}
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 640px) {
+  
+
+#logo{
+  width: 100%;
+  margin-left: 143px;
+}
+
+nav{
+width: 98%;
+background: #4aaaa5;
+margin-top: 10px;
+text-align: center;
+margin-left: 5px;
+margin-right: 5px;
+
+}  
+
+#kilo{
+margin-top: 150px;
+}
+
+ #yeah{
+  margin-top: 150px;
+ }  
+
+#yeah3{
+margin-top: 150px;
+}
+
 
 
 
